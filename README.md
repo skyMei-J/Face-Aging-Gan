@@ -52,15 +52,23 @@ use pretrain weight :unzip 'average.zip', and put 'average' in 0610172_src/
 			If you want to know How to train 'average':  
 			{
 				open 'find_age_latent.py'
+				
 					set ckpt = {CHECKPOINT_PATH}
+					
 					set step = 1000
+					
 					set train_img_path = {CLASSIFIED_DATASET_PATH}
+					
 					set REPRESENTING_LATENT_NUM = 500 #larger REPRESENTING_LATENT_NUM is better but take more time
+					
 					run 'find_age_latent.py' to save all the age latents in {CLASSIFIED_DATASET_PATH}/{age}/{this_age_latent.pt}
+					
 					
 				open 'average.ipynb'
 					set path = {CLASSIFIED_DATASET_PATH}
+					
 					run 'average.ipynb' to average all the latents with same age to represent certain age latent
+					
 			}
         open 'test.py'
 	

@@ -10,27 +10,41 @@ use pretrain weight :unzip 'average.zip', and put 'average' in 0610172_src/
 ## PREPROCESSING:
 	
    use jupyter notebook
-   open 'dataset_for_dataloader.ipynb'
-        1. set path = {thumbnails128x128_DATASET}
-        2. set output_path = {dataset_for_dataloader_PATH} (classify data by train/test)
-        3. run 'dataset_for_dataloader.ipynb' to prepare dataset for dataloader
+   open 'dataset_for_dataloader.ipynb'. 
+   
+        1. set path = {thumbnails128x128_DATASET}. 
+	
+        2. set output_path = {dataset_for_dataloader_PATH} (classify data by train/test). 
+	
+        3. run 'dataset_for_dataloader.ipynb' to prepare dataset for dataloader. 
+	
             
 ## TRAINING:
 
-   open 'train.py'
-            set ITERATION = 900000
-            set BATCH = 4 
-            set SAVING_POINT = 10000 #every 10000 iteration save one checkpoint
-            set label_PATH = 'train_label.txt'
-            set load_data_path='{dataset_for_dataloader_PATH}'+'train/'
-            run train.py to output checkpoint, please iterate more than 400000
-   NOTICE: please don't use the lastest checkpoint, and use the second to last.
+   open 'train.py'. 
+   
+            set ITERATION = 900000. 
+	    
+            set BATCH = 4   
+	    
+            set SAVING_POINT = 10000 #every 10000 iteration save one checkpoint. 
+	    
+            set label_PATH = 'train_label.txt'. 
+	    
+            set load_data_path='{dataset_for_dataloader_PATH}'+'train/'. 
+	    
+            run train.py to output checkpoint, please iterate more than 400000. 
+	    
+   NOTICE: please don't use the lastest checkpoint, and use the second to last.  
+   
             
 ## TESTING:
 
 	
-        open 'classify_data.ipynb'
-            set path = {thumbnails128x128_DATASET}
+   open 'classify_data.ipynb'. 
+   
+            set path = {thumbnails128x128_DATASET}. 
+	    
             set output_path = {CLASSIFIED_DATASET_PATH} (classify data by age and store in this directory)
             restart kernel and re-run the whole notebook to classify data
 			If you want to know How to train 'average':

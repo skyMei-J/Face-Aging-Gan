@@ -3,18 +3,19 @@
 ## Download pretrained model first:
 https://drive.google.com/drive/folders/1DfUubGPOD9fDChBPMdsV4UBAh_FcjvrX?usp=sharing
 
+Then, move 'train_label.txt','test_label.txt','test_desired_age.txt' to 0610172_src/
+
 ## Environment: torch 1.3.1, python3
 ## PREPROCESSING:
-	1. move 'train_label.txt','test_label.txt','test_desired_age.txt' to 0610172_src/
-
-        2. use jupyter notebook
-
-        3. open 'dataset_for_dataloader.ipynb'
-        4. set path = {thumbnails128x128_DATASET}
-        5. set output_path = {dataset_for_dataloader_PATH} (classify data by train/test)
-        6. run 'dataset_for_dataloader.ipynb' to prepare dataset for dataloader
+	
+        1. use jupyter notebook
+        2. open 'dataset_for_dataloader.ipynb'
+        3. set path = {thumbnails128x128_DATASET}
+        4. set output_path = {dataset_for_dataloader_PATH} (classify data by train/test)
+        5. run 'dataset_for_dataloader.ipynb' to prepare dataset for dataloader
             
 ## TRAINING:
+
         open 'train.py'
             set ITERATION = 900000
             set BATCH = 4 
@@ -25,6 +26,7 @@ https://drive.google.com/drive/folders/1DfUubGPOD9fDChBPMdsV4UBAh_FcjvrX?usp=sha
             NOTICE: please don't use the lastest checkpoint, and use the second to last.
             
 ## TESTING:
+
 	use pretrain weight :unzip 'average.zip', and put 'average' in 0610172_src/
         open 'classify_data.ipynb'
             set path = {thumbnails128x128_DATASET}

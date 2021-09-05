@@ -1,6 +1,13 @@
 # Face-Aging-Gan: Training a GAN from scratch
 ![image](https://github.com/skyMei-J/Image/blob/main/GAN/截圖%202021-09-05%20上午1.27.30.png)
 
+Original age: 63
+Use our GAN to transform to 23 years old
+![image](https://github.com/skyMei-J/Image/blob/main/GAN/65181_aged.png)
+
+Here is the reconstructed face of the original face 63
+![image](https://github.com/skyMei-J/Image/blob/main/GAN/65181_rec.png)
+
 
 ## Generate aging image of the testing data with specified ages.
 

@@ -50,21 +50,26 @@ use pretrain weight :unzip 'average.zip', and put 'average' in 0610172_src/
             restart kernel and re-run the whole notebook to classify data. 
 	    
 			If you want to know How to train 'average':  
-			{. 
-				open 'find_age_latent.py'. 
-					set ckpt = {CHECKPOINT_PATH}. 
-					set step = 1000. 
-					set train_img_path = {CLASSIFIED_DATASET_PATH}. 
-					set REPRESENTING_LATENT_NUM = 500 #larger REPRESENTING_LATENT_NUM is better but take more time. 
-					run 'find_age_latent.py' to save all the age latents in {CLASSIFIED_DATASET_PATH}/{age}/{this_age_latent.pt}. 
-
-				open 'average.ipynb'. 
-					set path = {CLASSIFIED_DATASET_PATH}. 
-					run 'average.ipynb' to average all the latents with same age to represent certain age latent. 
-			}. 
+			{
+				open 'find_age_latent.py'
+					set ckpt = {CHECKPOINT_PATH}
+					set step = 1000
+					set train_img_path = {CLASSIFIED_DATASET_PATH}
+					set REPRESENTING_LATENT_NUM = 500 #larger REPRESENTING_LATENT_NUM is better but take more time
+					run 'find_age_latent.py' to save all the age latents in {CLASSIFIED_DATASET_PATH}/{age}/{this_age_latent.pt}
+					
+				open 'average.ipynb'
+					set path = {CLASSIFIED_DATASET_PATH}
+					run 'average.ipynb' to average all the latents with same age to represent certain age latent
+			}
         open 'test.py'
+	
             set step = 1000
+	    
             set CHECKPOINT ={CHECKPOINT_PATH}
+	    
             set DATASET = {thumbnails128x128_DATASET}
+	    
             set aging_answer_path = {output_img_path} default = '../0610172_img/'
+	    
             run test.py to save {}_aged.png & {}_rec.png to aging_answer_path

@@ -1,9 +1,10 @@
 # Face-Aging-Gan
 
+## Download dataset:
 ## Download pretrained model first:
 https://drive.google.com/drive/folders/1DfUubGPOD9fDChBPMdsV4UBAh_FcjvrX?usp=sharing
 
-Then, move 'train_label.txt','test_label.txt','test_desired_age.txt' to 0610172_src/
+Then, move 'train_label.txt', 'test_label.txt', 'test_desired_age.txt' to 0610172_src/
 use pretrain weight :unzip 'average.zip', and put 'average' in 0610172_src/
 
 ## Environment: torch 1.3.1, python3

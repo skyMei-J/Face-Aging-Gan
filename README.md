@@ -1,4 +1,16 @@
-# Face-Aging-Gan
+# Face-Aging-Gan: Training a GAN from scratch
+
+
+
+## Generate aging image of the testing data with specified ages.
+
+### Two inputs: 
+#### 1. a face image
+#### 2. desired age {20~70}
+
+### One output: aging image
+
+
 
 ## Download dataset: 
 thumbnails128x128:

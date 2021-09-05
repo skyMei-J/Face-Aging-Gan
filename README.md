@@ -15,6 +15,8 @@ Here is the reconstructed face of the original face 63.
 ### Using the method below
 ![image](https://github.com/skyMei-J/Image/blob/main/GAN/截圖%202021-09-05%20上午2.22.46.png)
 
+![image](https://github.com/skyMei-J/Image/blob/main/GAN/截圖%202021-09-05%20上午3.35.24.png)
+
 ### Two inputs: 
 #### 1. a face image
 #### 2. desired age {20~70}

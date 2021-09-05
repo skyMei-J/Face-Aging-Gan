@@ -23,12 +23,12 @@ Here is the reconstructed face of the original face 63.
 
 
 ### Generator: 
-Input: Random Noise
-Output: Fake image
+Input: Random Noise  
+Output: Fake image. 
 
 ### Discriminator
-Input Fake image and real image(from training data)
-Output: real or fake
+Input Fake image and real image(from training data). 
+Output: real or fake. 
 
 
 ## Download dataset: 

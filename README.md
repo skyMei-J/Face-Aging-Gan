@@ -1,6 +1,9 @@
 # Face-Aging-Gan
 
-## Download dataset:
+## Download dataset: 
+thumbnails128x128:
+https://drive.google.com/drive/folders/1tg-Ur7d4vk1T8Bn0pPpUSQPxlPGBlGfv?usp=sharing
+
 ## Download pretrained model first:
 https://drive.google.com/drive/folders/1DfUubGPOD9fDChBPMdsV4UBAh_FcjvrX?usp=sharing
 

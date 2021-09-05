@@ -1,5 +1,5 @@
 # Face-Aging-Gan: Training a GAN from scratch
-
+![image](https://github.com/skyMei-J/Image/blob/main/GAN/截圖%202021-09-05%20上午1.27.30.png)
 
 
 ## Generate aging image of the testing data with specified ages.

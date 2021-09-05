@@ -12,6 +12,8 @@ Here is the reconstructed face of the original face 63.
 
 
 ## Generate aging image of the testing data with specified ages.
+### Using the method below
+![image](https://github.com/skyMei-J/Image/blob/main/GAN/截圖%202021-09-05%20上午2.22.46.png)
 
 ### Two inputs: 
 #### 1. a face image
@@ -19,6 +21,14 @@ Here is the reconstructed face of the original face 63.
 
 ### One output: aging image
 
+
+### Generator: 
+Input: Random Noise
+Output: Fake image
+
+### Discriminator
+Input Fake image and real image(from training data)
+Output: real or fake
 
 
 ## Download dataset: 

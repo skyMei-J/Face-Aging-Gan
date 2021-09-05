@@ -1,21 +1,20 @@
 # Face-Aging-Gan
 
+## Download pretrained model first:
+https://drive.google.com/drive/folders/1DfUubGPOD9fDChBPMdsV4UBAh_FcjvrX?usp=sharing
 
-require version: torch 1.3.1, python3
+## Environment: torch 1.3.1, python3
+## PREPROCESSING:
+	1. move 'train_label.txt','test_label.txt','test_desired_age.txt' to 0610172_src/
 
-    PREPROCESSING:
+        2. use jupyter notebook
 
-        move 'train_label.txt','test_label.txt','test_desired_age.txt' to 0610172_src/
-
-        use jupyter notebook
-
-        open 'dataset_for_dataloader.ipynb'
-            set path = {thumbnails128x128_DATASET}
-            set output_path = {dataset_for_dataloader_PATH} (classify data by train/test)
-            run 'dataset_for_dataloader.ipynb' to prepare dataset for dataloader
+        3. open 'dataset_for_dataloader.ipynb'
+        4. set path = {thumbnails128x128_DATASET}
+        5. set output_path = {dataset_for_dataloader_PATH} (classify data by train/test)
+        6. run 'dataset_for_dataloader.ipynb' to prepare dataset for dataloader
             
-    
-    TRAINING:
+## TRAINING:
         open 'train.py'
             set ITERATION = 900000
             set BATCH = 4 
@@ -25,8 +24,8 @@ require version: torch 1.3.1, python3
             run train.py to output checkpoint, please iterate more than 400000
             NOTICE: please don't use the lastest checkpoint, and use the second to last.
             
-    TESTING:
-		use pretrain weight :unzip 'average.zip', and put 'average' in 0610172_src/
+## TESTING:
+	use pretrain weight :unzip 'average.zip', and put 'average' in 0610172_src/
         open 'classify_data.ipynb'
             set path = {thumbnails128x128_DATASET}
             set output_path = {CLASSIFIED_DATASET_PATH} (classify data by age and store in this directory)
